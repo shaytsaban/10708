@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Principles of All the Accounting in The World - Dr. Shay Tsaban</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #ff6b6b;
+            --secondary-color: #54a0ff;
+            --bright-green: #10ac84;
+            --sunshine-yellow: #ffcd39;
+            --dark-bg: #2d3748;
+            --light-bg: #f9f7f3;
+            --shadow-sm: 0 4px 15px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.2);
+            --border-radius: 15px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: var(--light-bg);
+            color: var(--dark-bg);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            padding: 2rem;
+            text-align: center;
+            box-shadow: var(--shadow-lg);
+            position: relative;
+            z-index: 10;
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: white;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+            animation: bounce 2s infinite;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: white;
+            margin-top: 0.5rem;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 3rem auto;
+            padding: 0 20px;
+        }
+
+        .intro {
+            background: white;
+            padding: 2.5rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-sm);
+            text-align: center;
+            margin-bottom: 3rem;
+            animation: slideIn 1s ease-out;
+        }
+
+        .intro h2 {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .intro p {
+            font-size: 1.1rem;
+            color: #4a5568;
+        }
+
+        .big-btn {
+            display: inline-block;
+            padding: 1.5rem 3rem;
+            font-size: 1.5rem;
+            font-weight: 600;
+            text-decoration: none;
+            color: white;
+            background: linear-gradient(135deg, var(--bright-green), var(--sunshine-yellow));
+            border-radius: 50px;
+            box-shadow: var(--shadow-sm);
+            transition: all 0.3s ease;
+            margin: 1rem 0;
+            cursor: pointer;
+        }
+
+        .big-btn:hover {
+            transform: scale(1.1) rotate(2deg);
+            box-shadow: var(--shadow-lg);
+            background: linear-gradient(135deg, var(--sunshine-yellow), var(--bright-green));
+        }
+
+        .fun-section {
+            background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            color: white;
+            text-align: center;
+            margin-bottom: 3rem;
+            box-shadow: var(--shadow-sm);
+            animation: fadeIn 1.5s ease-in;
+        }
+
+        .fun-section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .fun-section p {
+            font-size: 1.1rem;
+        }
+
+        .emoji-spin {
+            display: inline-block;
+            animation: spin 3s linear infinite;
+        }
+
+        footer {
+            background: var(--dark-bg);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+            border-top: 5px solid var(--sunshine-yellow);
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+
+        footer a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        footer a:hover {
+            color: var(--sunshine-yellow);
+        }
+
+        /* Animations */
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-20px); }
+            60% { transform: translateY(-10px); }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .big-btn {
+                padding: 1rem 2rem;
+                font-size: 1.2rem;
+            }
+
+            .intro h2 {
+                font-size: 1.6rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Principles of All the Accounting in The World 📊💰</h1>
+        <p>By Dr. Shay Tsaban 👨‍🏫✨</p>
+    </header>
+
+    <div class="container">
+        <section class="intro">
+            <h2>Welcome to the Accounting Party! 🎉</h2>
+            <p>Hey there, number crunchers! I’m Dr. Shay Tsaban, your guide to mastering <em>all the accounting in the world</em>. Grab your calculators, coffee ☕, and enthusiasm—this course is going to be a wild ride through ledgers, balance sheets, and maybe a little chaos (just kidding… or am I? 😜).</p>
+            <a href="https://github.com/shaytsaban/10708/raw/main/Course%20Notes%20-%202025%20Regular%20Guidance.xlsx" class="big-btn" id="downloadBtn">Download Course Notes 📝🚀</a>
+        </section>
+
+        <section class="fun-section">
+            <h2>Why Accounting Rocks 🤓</h2>
+            <p>Because who doesn’t love balancing books while sipping tea and dreaming of being a financial wizard? 🧙‍♂️ This repo contains the legendary <strong>Course Notes - 2025 Regular Guidance.xlsx</strong>—your golden ticket to acing this course. Click that big button above, and let’s get counting! <span class="emoji-spin">💸</span></p>
+        </section>
+
+        <section class="intro">
+            <h2>Pro Tip from Dr. Shay 🌟</h2>
+            <p>Accounting isn’t just numbers—it’s a lifestyle. Keep your pencils sharp, your spreadsheets shinier, and your sense of humor intact. Fun fact: I once balanced a budget while riding a unicycle… okay, maybe not, but I could try! 🎪</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2025 Dr. Shay Tsaban | GitHub: <a href="https://github.com/shaytsaban/10708">shaytsaban/10708</a></p>
+        <p>Made with 💖, caffeine ☕, and a sprinkle of accounting magic ✨</p>
+    </footer>
+
+    <script>
+        // Button click animation and funny alert
+        const downloadBtn = document.getElementById('downloadBtn');
+        downloadBtn.addEventListener('click', () => {
+            downloadBtn.style.transform = 'scale(1.2)';
+            setTimeout(() => {
+                downloadBtn.style.transform = 'scale(1)';
+                alert('Downloading the secrets of accounting! Don’t spend it all in one place! 💰');
+            }, 200);
+        });
+
+        // Random emoji pop-up effect
+        const emojis = ['💸', '📊', '💰', '📝', '✨', '🚀'];
+        setInterval(() => {
+            const emoji = document.createElement('span');
+            emoji.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+            emoji.style.position = 'fixed';
+            emoji.style.fontSize = '2rem';
+            emoji.style.left = Math.random() * 100 + 'vw';
+            emoji.style.top = Math.random() * 100 + 'vh';
+            emoji.style.zIndex = '1000';
+            emoji.style.animation = 'fadeIn 1s ease-out forwards';
+            document.body.appendChild(emoji);
+            setTimeout(() => emoji.remove(), 1000);
+        }, 3000);
+    </script>
+</body>
+</html>
